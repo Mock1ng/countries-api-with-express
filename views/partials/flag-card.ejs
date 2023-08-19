@@ -1,0 +1,17 @@
+<div class="card">
+  <img src=<%= flag.flags.png %> alt=`<%= flag.name.common %> flag` />
+  <div class="body">
+    <h2><%= flag.name.common %></h2>
+
+    <div class="data">
+      <p>Population: <span><%= flag.population %></span></p>
+      <p>Region: <span><%= flag.region %></span></p>
+      <p>Capital: 
+        <% if (flag.capital && flag.capital.length > 0) { %>
+          <span><%= flag.capital[0] %></span></p>
+        <% } else { %>
+          <span>-</span></p>
+        <% } %>
+    </div>
+  </div>
+</div>

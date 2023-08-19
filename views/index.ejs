@@ -1,0 +1,7 @@
+<%- include('./partials/header') %>
+
+<div class="card-wrapper container">
+  <% countries.forEach(flag => { %> 
+    <%- include('./partials/flag-card', {flag})%>   
+  <% }) %>
+</div>
